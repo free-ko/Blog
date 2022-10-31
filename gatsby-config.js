@@ -10,13 +10,13 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `Minimal Blog`,
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteHeadline: `Minimal Blog - Gatsby Theme from @lekoarts`,
+    siteTitle: `빠름보단 바름`,
+    siteTitleAlt: `영욱 성장 기록소`,
+    siteHeadline: `👋 영욱 블로그`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and line highlighting.`,
+    siteDescription: `안녕하세요. 소프트웨어 개발자 고영욱입니다. 제가 경험하고 느낀 것을 기록하는 기록 저장소 입니다.`,
     siteImage: `/banner.jpg`,
-    author: `@lekoarts_de`,
+    author: `Kay`,
   },
   plugins: [
     {
