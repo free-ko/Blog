@@ -10,34 +10,40 @@ module.exports = {
     siteTitle: `고영욱의 블로그`,
     siteTitleAlt: `👋 고영욱의 블로그`,
     siteHeadline: `👋 고영욱의 블로그`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
-    siteDescription: `안녕하세요. 소프트웨어 개발자 고영욱입니다. 제가 경험하고 느낀 것을 기록하는 기록 저장소 입니다.`,
+    siteUrl: ``,
     siteImage: `/banner.jpg`,
-    author: `Kay`,
+    siteLanguage: `ko`,
+    siteDescription: `소프트웨어 개발자 고영욱의 성장(成長) 블로그`,
+    author: `@Kay_ `,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        blogPath: `/posts`,
         navigation: [
-          {
-            title: `Blog`,
-            slug: `/blog`,
-          },
           {
             title: `About`,
             slug: `/about`,
           },
+          {
+            title: `Posts`,
+            slug: `/posts`,
+          },
+          {
+            title: `Tags`,
+            slug: `/tags`,
+          }
         ],
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/KoYoungwock`,
           },
           {
-            name: `Homepage`,
-            url: `https://www.lekoarts.de?utm_source=minimal-blog&utm_medium=Starter`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/youngwock-ko-74223921b/`,
           },
         ],
       },
