@@ -10,9 +10,9 @@ module.exports = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-minimal-blog/gatsby-config.js
-    siteTitle: `빠름보단 바름`,
-    siteTitleAlt: `영욱 성장 기록소`,
-    siteHeadline: `👋 영욱 블로그`,
+    siteTitle: `고영욱의 블로그`,
+    siteTitleAlt: `👋 고영욱의 블로그`,
+    siteHeadline: `👋 고영욱의 블로그`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
     siteDescription: `안녕하세요. 소프트웨어 개발자 고영욱입니다. 제가 경험하고 느낀 것을 기록하는 기록 저장소 입니다.`,
     siteImage: `/banner.jpg`,
