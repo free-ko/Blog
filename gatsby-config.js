@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: `고영욱의 블로그`,
     siteTitleAlt: `👋 고영욱의 블로그`,
     siteHeadline: `👋 고영욱의 블로그`,
-    siteUrl: ``,
+    siteUrl: `https://minimal-blog.lekoarts.de`,
     siteImage: `/banner.jpg`,
     siteLanguage: `ko`,
     siteDescription: `소프트웨어 개발자 고영욱의 성장(成長) 블로그`,
@@ -57,14 +57,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `고영욱의 블로그`,
+        short_name: `고영욱의 블로그`,
+        description: `소프트웨어 개발자 고영욱의 성장(成長) 블로그`,
         start_url: `/`,
         background_color: `#fff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#6B46C1`,
         display: `standalone`,
         icons: [
           {
@@ -78,6 +75,16 @@ module.exports = {
             type: `image/png`,
           },
         ],
+      },
+    },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`,
+    shouldAnalyseBundle && {
+      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
+      options: {
+        analyzerMode: `static`,
+        reportFilename: `_bundle.html`,
+        openAnalyzer: false,
       },
     },
     {
@@ -100,7 +107,7 @@ module.exports = {
             serialize: ({ query: { site, allPost } }) =>
               allPost.nodes.map((post) => {
                 const url = site.siteMetadata.siteUrl + post.slug
-                const content = `<p>${post.excerpt}</p><div style="margin-top: 50px; font-style: italic;"><strong><a href="${url}">Keep reading</a>.</strong></div><br /> <br />`
+                const content = `<p>${post.excerpt}</p><div style="margin-top: 50px]; font-style: italic;"><strong><a href="${url}">더 읽어보기</a>.</strong></div><br /> <br />`
 
                 return {
                   title: post.title,
@@ -124,17 +131,9 @@ module.exports = {
               }
             `,
             output: `rss.xml`,
-            title: `Minimal Blog - @lekoarts/gatsby-theme-minimal-blog`,
+            title: `고영욱의 블로그`
           },
         ],
-      },
-    },
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
-      options: {
-        analyzerMode: `static`,
-        reportFilename: `_bundle.html`,
-        openAnalyzer: false,
       },
     },
   ].filter(Boolean),
