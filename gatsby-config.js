@@ -10,7 +10,7 @@ module.exports = {
     siteTitle: `Kay's Blog`,
     siteTitleAlt: `👋 kay's Blog`,
     siteHeadline: `👋 kay's Blog`,
-    siteUrl: `https://minimal-blog.lekoarts.de`,
+    siteUrl: `https://minimal-blog.lekoarts.de`,  // Todo 배포후 URL 수정해야 함
     siteImage: `/banner.jpg`,
     siteLanguage: `ko`,
     siteDescription: `소프트웨어 개발자 고영욱의 성장(成長) 블로그`,
@@ -19,7 +19,6 @@ module.exports = {
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
       options: {
         blogPath: `/posts`,
         navigation: [
@@ -46,6 +45,9 @@ module.exports = {
             url: `https://www.linkedin.com/in/youngwock-ko-74223921b/`,
           },
         ],
+        feeds: true,
+        feedTitle: `Kay's Blog`,
+        formatString: "YYYY.MM.DD",
       },
     },
     {
@@ -131,7 +133,7 @@ module.exports = {
               }
             `,
             output: `rss.xml`,
-            title: `고영욱의 블로그`
+            title: `Kay's Blog`
           },
         ],
       },
