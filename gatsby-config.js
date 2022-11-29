@@ -7,9 +7,9 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
  */
 module.exports = {
   siteMetadata: {
-    siteTitle: `고영욱의 블로그`,
-    siteTitleAlt: `👋 고영욱의 블로그`,
-    siteHeadline: `👋 고영욱의 블로그`,
+    siteTitle: `Kay's Blog`,
+    siteTitleAlt: `👋 kay's Blog`,
+    siteHeadline: `👋 kay's Blog`,
     siteUrl: `https://minimal-blog.lekoarts.de`,
     siteImage: `/banner.jpg`,
     siteLanguage: `ko`,
@@ -57,8 +57,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `고영욱의 블로그`,
-        short_name: `고영욱의 블로그`,
+        name: `Kay's Blog`,
+        short_name: `Kay's Blog`,
         description: `소프트웨어 개발자 고영욱의 성장(成長) 블로그`,
         start_url: `/`,
         background_color: `#fff`,
