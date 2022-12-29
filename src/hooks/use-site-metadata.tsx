@@ -18,20 +18,20 @@ type UseSiteMetadataProps = {
 
 const useSiteMetadata = () => {
   const data = useStaticQuery<UseSiteMetadataProps>(graphql`
-      query {
-          site {
-              siteMetadata {
-                  siteTitle
-                  siteTitleAlt
-                  siteHeadline
-                  siteUrl
-                  siteDescription
-                  siteLanguage
-                  siteImage
-                  author
-              }
-          }
+    query {
+      site {
+        siteMetadata {
+          siteTitle
+          siteTitleAlt
+          siteHeadline
+          siteUrl
+          siteDescription
+          siteLanguage
+          siteImage
+          author
+        }
       }
+    }
   `)
 
   return data.site.siteMetadata

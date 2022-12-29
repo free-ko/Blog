@@ -22,25 +22,25 @@ type UseMinimalBlogConfigProps = {
 
 const useMinimalBlogConfig = () => {
   const data = useStaticQuery<UseMinimalBlogConfigProps>(graphql`
-      query {
-          minimalBlogConfig {
-              basePath
-              blogPath
-              postsPath
-              pagesPath
-              tagsPath
-              externalLinks {
-                  name
-                  url
-              }
-              navigation {
-                  title
-                  slug
-              }
-              showLineNumbers
-              showCopyButton
-          }
+    query {
+      minimalBlogConfig {
+        basePath
+        blogPath
+        postsPath
+        pagesPath
+        tagsPath
+        externalLinks {
+          name
+          url
+        }
+        navigation {
+          title
+          slug
+        }
+        showLineNumbers
+        showCopyButton
       }
+    }
   `)
 
   return data.minimalBlogConfig
